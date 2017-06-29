@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uzB-YP-A3e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="k6H-0h-Fh6">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" id="LyY-L8-bJ0" customClass="HomeViewController" customModule="Five_Dialer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MXV-h4-xYt"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9t-5n-mec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Qd-rQ-3mD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Five Card Dialer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsV-AD-6z1">
+                                <rect key="frame" x="16" y="28" width="343" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="I7x-3V-qL4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Contact" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-cH-92u">
+                                <rect key="frame" x="30" y="100" width="284" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="64K-0M-Ah2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LyY-L8-bJ0" id="8uD-to-eOw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hud-Jh-h6x">
+                                <rect key="frame" x="329" y="108" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="amB-Tj-SBE"/>
+                                    <constraint firstAttribute="width" constant="22" id="ocU-iw-vax"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="addContact:" destination="LyY-L8-bJ0" eventType="touchUpInside" id="o05-JX-baO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-dL-opg">
+                                <rect key="frame" x="133.5" y="263" width="108" height="36"/>
+                                <color key="backgroundColor" red="0.15757265590411484" green="0.82597959844559588" blue="0.52889360909314853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="SDf-lj-wp9"/>
+                                    <constraint firstAttribute="height" constant="36" id="raY-te-699"/>
+                                </constraints>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dial:" destination="LyY-L8-bJ0" eventType="touchUpInside" id="DGf-gi-bHe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549019607843138" green="0.14117647058823529" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KAc-dL-opg" firstAttribute="top" secondItem="Ngu-cH-92u" secondAttribute="bottom" constant="125" id="6xc-YD-NTf"/>
+                            <constraint firstAttribute="trailing" secondItem="Hud-Jh-h6x" secondAttribute="trailing" constant="24" id="BNE-d6-WYG"/>
+                            <constraint firstAttribute="trailing" secondItem="zsV-AD-6z1" secondAttribute="trailing" constant="16" id="CgN-z4-6sv"/>
+                            <constraint firstItem="Hud-Jh-h6x" firstAttribute="leading" secondItem="Ngu-cH-92u" secondAttribute="trailing" constant="15" id="FIm-FY-hQS"/>
+                            <constraint firstItem="KAc-dL-opg" firstAttribute="centerX" secondItem="6Qd-rQ-3mD" secondAttribute="centerX" id="IiF-D5-wuo"/>
+                            <constraint firstItem="zsV-AD-6z1" firstAttribute="leading" secondItem="6Qd-rQ-3mD" secondAttribute="leading" constant="16" id="RQ0-vH-owg"/>
+                            <constraint firstItem="Hud-Jh-h6x" firstAttribute="centerY" secondItem="Ngu-cH-92u" secondAttribute="centerY" id="SAR-hc-pHK"/>
+                            <constraint firstItem="Ngu-cH-92u" firstAttribute="top" secondItem="zsV-AD-6z1" secondAttribute="bottom" constant="25" id="hDn-eQ-xPo"/>
+                            <constraint firstItem="Ngu-cH-92u" firstAttribute="leading" secondItem="6Qd-rQ-3mD" secondAttribute="leading" constant="30" id="hiw-7Z-3i0"/>
+                            <constraint firstItem="zsV-AD-6z1" firstAttribute="top" secondItem="MXV-h4-xYt" secondAttribute="bottom" constant="8" id="ic7-xa-F0G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPhoneNumber" destination="Ngu-cH-92u" id="1rJ-Pn-bCA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TlE-yx-XbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="384.55772113943033"/>
+        </scene>
+        <!--Tabbed View Controller-->
+        <scene sceneID="cwk-QD-5fh">
+            <objects>
+                <viewController id="uzB-YP-A3e" customClass="TabbedViewController" customModule="Five_Dialer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Rr-9J-I34"/>
+                        <viewControllerLayoutGuide type="bottom" id="udb-2R-UaX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ejg-Sl-Ukk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWD-I8-MmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="1094"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Five_Dialer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hki-GT-M0F">
+                                <rect key="frame" x="31" y="43" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2fm-g9-chY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcH-dW-0mW">
+                                <rect key="frame" x="334" y="47" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="addContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yh-5J-WZa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inm-Zy-VLA">
+                                <rect key="frame" x="127" y="153" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dial"/>
+                                <connections>
+                                    <action selector="dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THG-Hn-Pc5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hki-GT-M0F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="DcL-Lc-c9S"/>
+                            <constraint firstItem="Hki-GT-M0F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="31" id="fxb-vT-XkD"/>
+                            <constraint firstAttribute="trailing" secondItem="Hki-GT-M0F" secondAttribute="trailing" constant="64" id="lPg-cU-7nF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPhoneNumber" destination="Hki-GT-M0F" id="lu0-yQ-iBy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

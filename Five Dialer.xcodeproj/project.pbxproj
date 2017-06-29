@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271D3C231ED40B880086C836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C221ED40B880086C836 /* AppDelegate.swift */; };
+		271D3C251ED40B880086C836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D3C241ED40B880086C836 /* ViewController.swift */; };
+		271D3C281ED40B880086C836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C261ED40B880086C836 /* Main.storyboard */; };
+		271D3C2A1ED40B880086C836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C291ED40B880086C836 /* Assets.xcassets */; };
+		271D3C2D1ED40B880086C836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C2B1ED40B880086C836 /* LaunchScreen.storyboard */; };
+		27B524EE1F0468A600A48099 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B524ED1F0468A600A48099 /* HomeViewController.swift */; };
+		27B524F11F04C15F00A48099 /* TabbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B524F01F04C15F00A48099 /* TabbedViewController.swift */; };
+		27B524F61F04CFC900A48099 /* Pageboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B524F31F04CFC900A48099 /* Pageboy.framework */; };
+		27B524F71F04CFC900A48099 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B524F41F04CFC900A48099 /* PureLayout.framework */; };
+		27B524F81F04CFC900A48099 /* Tabman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B524F51F04CFC900A48099 /* Tabman.framework */; };
+		9F59C6D12D207231A9A0A0D5 /* Pods_Five_Dialer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02821F98B4A048ABC01CC7A8 /* Pods_Five_Dialer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02821F98B4A048ABC01CC7A8 /* Pods_Five_Dialer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Five_Dialer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		271D3C1F1ED40B880086C836 /* Five Dialer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Five Dialer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		271D3C221ED40B880086C836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		271D3C241ED40B880086C836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		271D3C271ED40B880086C836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		271D3C291ED40B880086C836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		271D3C2C1ED40B880086C836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		271D3C2E1ED40B880086C836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B524ED1F0468A600A48099 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		27B524F01F04C15F00A48099 /* TabbedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedViewController.swift; sourceTree = "<group>"; };
+		27B524F31F04CFC900A48099 /* Pageboy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pageboy.framework; path = Carthage/Build/iOS/Pageboy.framework; sourceTree = "<group>"; };
+		27B524F41F04CFC900A48099 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
+		27B524F51F04CFC900A48099 /* Tabman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tabman.framework; path = Carthage/Build/iOS/Tabman.framework; sourceTree = "<group>"; };
+		847C2DA658D49FCA56D2F3EE /* Pods-Five Dialer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Five Dialer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Five Dialer/Pods-Five Dialer.release.xcconfig"; sourceTree = "<group>"; };
+		8CF85B29E8AC1F7BEFDECE1B /* Pods-Five Dialer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Five Dialer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Five Dialer/Pods-Five Dialer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		271D3C1C1ED40B880086C836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F59C6D12D207231A9A0A0D5 /* Pods_Five_Dialer.framework in Frameworks */,
+				27B524F61F04CFC900A48099 /* Pageboy.framework in Frameworks */,
+				27B524F71F04CFC900A48099 /* PureLayout.framework in Frameworks */,
+				27B524F81F04CFC900A48099 /* Tabman.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		271D3C161ED40B870086C836 = {
+			isa = PBXGroup;
+			children = (
+				271D3C211ED40B880086C836 /* Five Dialer */,
+				271D3C201ED40B880086C836 /* Products */,
+				A8799ABB1DED4DE3D3135A8C /* Pods */,
+				E367807742C3A4E1A2288427 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		271D3C201ED40B880086C836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				271D3C1F1ED40B880086C836 /* Five Dialer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		271D3C211ED40B880086C836 /* Five Dialer */ = {
+			isa = PBXGroup;
+			children = (
+				27B524EB1F04687500A48099 /* Controllers */,
+				271D3C221ED40B880086C836 /* AppDelegate.swift */,
+				271D3C241ED40B880086C836 /* ViewController.swift */,
+				271D3C261ED40B880086C836 /* Main.storyboard */,
+				271D3C291ED40B880086C836 /* Assets.xcassets */,
+				271D3C2B1ED40B880086C836 /* LaunchScreen.storyboard */,
+				271D3C2E1ED40B880086C836 /* Info.plist */,
+			);
+			path = "Five Dialer";
+			sourceTree = "<group>";
+		};
+		27B524EB1F04687500A48099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27B524EF1F04C14600A48099 /* TabbedView */,
+				27B524EC1F04689100A48099 /* HomeView */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27B524EC1F04689100A48099 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				27B524ED1F0468A600A48099 /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		27B524EF1F04C14600A48099 /* TabbedView */ = {
+			isa = PBXGroup;
+			children = (
+				27B524F01F04C15F00A48099 /* TabbedViewController.swift */,
+			);
+			path = TabbedView;
+			sourceTree = "<group>";
+		};
+		A8799ABB1DED4DE3D3135A8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF85B29E8AC1F7BEFDECE1B /* Pods-Five Dialer.debug.xcconfig */,
+				847C2DA658D49FCA56D2F3EE /* Pods-Five Dialer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E367807742C3A4E1A2288427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27B524F31F04CFC900A48099 /* Pageboy.framework */,
+				27B524F41F04CFC900A48099 /* PureLayout.framework */,
+				27B524F51F04CFC900A48099 /* Tabman.framework */,
+				02821F98B4A048ABC01CC7A8 /* Pods_Five_Dialer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		271D3C1E1ED40B880086C836 /* Five Dialer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271D3C311ED40B880086C836 /* Build configuration list for PBXNativeTarget "Five Dialer" */;
+			buildPhases = (
+				36E6F2ABF74D282C1BCB7B2E /* [CP] Check Pods Manifest.lock */,
+				271D3C1B1ED40B880086C836 /* Sources */,
+				271D3C1C1ED40B880086C836 /* Frameworks */,
+				271D3C1D1ED40B880086C836 /* Resources */,
+				DDCE52B10366DA30C145C5E3 /* [CP] Embed Pods Frameworks */,
+				7057A99901B232DE755B3DC7 /* [CP] Copy Pods Resources */,
+				27B524F91F04CFF800A48099 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Five Dialer";
+			productName = "Five Dialer";
+			productReference = 271D3C1F1ED40B880086C836 /* Five Dialer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		271D3C171ED40B870086C836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Khatri Soft";
+				TargetAttributes = {
+					271D3C1E1ED40B880086C836 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3U7U6K4WE2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 271D3C1A1ED40B870086C836 /* Build configuration list for PBXProject "Five Dialer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 271D3C161ED40B870086C836;
+			productRefGroup = 271D3C201ED40B880086C836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				271D3C1E1ED40B880086C836 /* Five Dialer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		271D3C1D1ED40B880086C836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271D3C2D1ED40B880086C836 /* LaunchScreen.storyboard in Resources */,
+				271D3C2A1ED40B880086C836 /* Assets.xcassets in Resources */,
+				271D3C281ED40B880086C836 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27B524F91F04CFF800A48099 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Pageboy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Tabman.framework",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Pageboy.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PureLayout.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Tabman.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		36E6F2ABF74D282C1BCB7B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7057A99901B232DE755B3DC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Five Dialer/Pods-Five Dialer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDCE52B10366DA30C145C5E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Five Dialer/Pods-Five Dialer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		271D3C1B1ED40B880086C836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271D3C251ED40B880086C836 /* ViewController.swift in Sources */,
+				27B524F11F04C15F00A48099 /* TabbedViewController.swift in Sources */,
+				271D3C231ED40B880086C836 /* AppDelegate.swift in Sources */,
+				27B524EE1F0468A600A48099 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		271D3C261ED40B880086C836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271D3C271ED40B880086C836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		271D3C2B1ED40B880086C836 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271D3C2C1ED40B880086C836 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		271D3C2F1ED40B880086C836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		271D3C301ED40B880086C836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		271D3C321ED40B880086C836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF85B29E8AC1F7BEFDECE1B /* Pods-Five Dialer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3U7U6K4WE2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Five Dialer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khatri.Five-Dialer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		271D3C331ED40B880086C836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847C2DA658D49FCA56D2F3EE /* Pods-Five Dialer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3U7U6K4WE2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Five Dialer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khatri.Five-Dialer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		271D3C1A1ED40B870086C836 /* Build configuration list for PBXProject "Five Dialer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271D3C2F1ED40B880086C836 /* Debug */,
+				271D3C301ED40B880086C836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271D3C311ED40B880086C836 /* Build configuration list for PBXNativeTarget "Five Dialer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271D3C321ED40B880086C836 /* Debug */,
+				271D3C331ED40B880086C836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 271D3C171ED40B870086C836 /* Project object */;
+}

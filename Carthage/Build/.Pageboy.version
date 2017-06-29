@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.3.2",
+  "iOS" : [
+    {
+      "hash" : "f7d83d356bdfa565486990f72b58b6f3cf8fd70b757543d7517003e752ae9535",
+      "name" : "Pageboy"
+    }
+  ]
+}
