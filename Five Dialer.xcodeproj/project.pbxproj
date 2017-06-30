@@ -14,9 +14,6 @@
 		271D3C2D1ED40B880086C836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271D3C2B1ED40B880086C836 /* LaunchScreen.storyboard */; };
 		27B524EE1F0468A600A48099 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B524ED1F0468A600A48099 /* HomeViewController.swift */; };
 		27B524F11F04C15F00A48099 /* TabbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B524F01F04C15F00A48099 /* TabbedViewController.swift */; };
-		27B524F61F04CFC900A48099 /* Pageboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B524F31F04CFC900A48099 /* Pageboy.framework */; };
-		27B524F71F04CFC900A48099 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B524F41F04CFC900A48099 /* PureLayout.framework */; };
-		27B524F81F04CFC900A48099 /* Tabman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B524F51F04CFC900A48099 /* Tabman.framework */; };
 		9F59C6D12D207231A9A0A0D5 /* Pods_Five_Dialer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02821F98B4A048ABC01CC7A8 /* Pods_Five_Dialer.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,9 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F59C6D12D207231A9A0A0D5 /* Pods_Five_Dialer.framework in Frameworks */,
-				27B524F61F04CFC900A48099 /* Pageboy.framework in Frameworks */,
-				27B524F71F04CFC900A48099 /* PureLayout.framework in Frameworks */,
-				27B524F81F04CFC900A48099 /* Tabman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +137,6 @@
 				271D3C1D1ED40B880086C836 /* Resources */,
 				DDCE52B10366DA30C145C5E3 /* [CP] Embed Pods Frameworks */,
 				7057A99901B232DE755B3DC7 /* [CP] Copy Pods Resources */,
-				27B524F91F04CFF800A48099 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,25 +196,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27B524F91F04CFF800A48099 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Pageboy.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Tabman.framework",
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Pageboy.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PureLayout.framework",
-				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Tabman.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		36E6F2ABF74D282C1BCB7B2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

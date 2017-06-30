@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,17 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Five Card Dialer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsV-AD-6z1">
-                                <rect key="frame" x="16" y="28" width="343" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="I7x-3V-qL4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Contact" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-cH-92u">
-                                <rect key="frame" x="30" y="100" width="284" height="38"/>
+                                <rect key="frame" x="30" y="70" width="284" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="64K-0M-Ah2"/>
@@ -43,7 +35,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hud-Jh-h6x">
-                                <rect key="frame" x="329" y="108" width="22" height="22"/>
+                                <rect key="frame" x="329" y="78" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="amB-Tj-SBE"/>
                                     <constraint firstAttribute="width" constant="22" id="ocU-iw-vax"/>
@@ -54,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-dL-opg">
-                                <rect key="frame" x="133.5" y="263" width="108" height="36"/>
+                                <rect key="frame" x="133.5" y="233" width="108" height="36"/>
                                 <color key="backgroundColor" red="0.15757265590411484" green="0.82597959844559588" blue="0.52889360909314853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="108" id="SDf-lj-wp9"/>
@@ -77,14 +69,11 @@
                         <constraints>
                             <constraint firstItem="KAc-dL-opg" firstAttribute="top" secondItem="Ngu-cH-92u" secondAttribute="bottom" constant="125" id="6xc-YD-NTf"/>
                             <constraint firstAttribute="trailing" secondItem="Hud-Jh-h6x" secondAttribute="trailing" constant="24" id="BNE-d6-WYG"/>
-                            <constraint firstAttribute="trailing" secondItem="zsV-AD-6z1" secondAttribute="trailing" constant="16" id="CgN-z4-6sv"/>
                             <constraint firstItem="Hud-Jh-h6x" firstAttribute="leading" secondItem="Ngu-cH-92u" secondAttribute="trailing" constant="15" id="FIm-FY-hQS"/>
+                            <constraint firstItem="Ngu-cH-92u" firstAttribute="top" secondItem="MXV-h4-xYt" secondAttribute="bottom" constant="50" id="IVF-0S-J62"/>
                             <constraint firstItem="KAc-dL-opg" firstAttribute="centerX" secondItem="6Qd-rQ-3mD" secondAttribute="centerX" id="IiF-D5-wuo"/>
-                            <constraint firstItem="zsV-AD-6z1" firstAttribute="leading" secondItem="6Qd-rQ-3mD" secondAttribute="leading" constant="16" id="RQ0-vH-owg"/>
                             <constraint firstItem="Hud-Jh-h6x" firstAttribute="centerY" secondItem="Ngu-cH-92u" secondAttribute="centerY" id="SAR-hc-pHK"/>
-                            <constraint firstItem="Ngu-cH-92u" firstAttribute="top" secondItem="zsV-AD-6z1" secondAttribute="bottom" constant="25" id="hDn-eQ-xPo"/>
                             <constraint firstItem="Ngu-cH-92u" firstAttribute="leading" secondItem="6Qd-rQ-3mD" secondAttribute="leading" constant="30" id="hiw-7Z-3i0"/>
-                            <constraint firstItem="zsV-AD-6z1" firstAttribute="top" secondItem="MXV-h4-xYt" secondAttribute="bottom" constant="8" id="ic7-xa-F0G"/>
                         </constraints>
                     </view>
                     <connections>
@@ -106,12 +95,89 @@
                     <view key="view" contentMode="scaleToFill" id="Ejg-Sl-Ukk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUr-kn-pBE">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2C-Va-Zfs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.14117647059999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="NnY-m0-qRu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Five Card Dialer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-DW-Rbh">
+                                <rect key="frame" x="16" y="20" width="343" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="ugu-Bd-rau"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.18447730712740476" green="0.97415398311502588" blue="0.63319123105663855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWS-ma-64g">
+                                <rect key="frame" x="0.0" y="75" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsk-Oz-G81">
+                                        <rect key="frame" x="8" y="0.0" width="171.5" height="45"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Call">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCallAction:" destination="uzB-YP-A3e" eventType="touchUpInside" id="LOF-06-vMA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI9-qq-oWy">
+                                        <rect key="frame" x="195.5" y="0.0" width="171.5" height="45"/>
+                                        <state key="normal" title="Call History">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCallHistoryAction:" destination="uzB-YP-A3e" eventType="touchUpInside" id="nUt-cX-bPQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uI9-qq-oWy" firstAttribute="width" secondItem="HWS-ma-64g" secondAttribute="width" multiplier="0.5" constant="-16" id="0ag-cT-ahd"/>
+                                    <constraint firstItem="uI9-qq-oWy" firstAttribute="top" secondItem="HWS-ma-64g" secondAttribute="top" id="Ckb-zG-AAI"/>
+                                    <constraint firstAttribute="height" constant="45" id="MbP-47-NNA"/>
+                                    <constraint firstItem="dsk-Oz-G81" firstAttribute="top" secondItem="HWS-ma-64g" secondAttribute="top" id="OzS-uv-cQg"/>
+                                    <constraint firstItem="dsk-Oz-G81" firstAttribute="leading" secondItem="HWS-ma-64g" secondAttribute="leading" constant="8" id="RhX-R7-kUr"/>
+                                    <constraint firstAttribute="bottom" secondItem="uI9-qq-oWy" secondAttribute="bottom" id="c6Y-ec-WwK"/>
+                                    <constraint firstAttribute="trailing" secondItem="uI9-qq-oWy" secondAttribute="trailing" constant="8" id="l6h-u9-gkZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="dsk-Oz-G81" secondAttribute="bottom" id="lTp-Kg-e7e"/>
+                                    <constraint firstItem="dsk-Oz-G81" firstAttribute="width" secondItem="HWS-ma-64g" secondAttribute="width" multiplier="0.5" constant="-16" id="sE9-YL-45H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="udb-2R-UaX" firstAttribute="top" secondItem="GUr-kn-pBE" secondAttribute="bottom" id="4T3-Ct-Dug"/>
+                            <constraint firstItem="HWS-ma-64g" firstAttribute="top" secondItem="Bpf-DW-Rbh" secondAttribute="bottom" constant="8" id="6jW-ga-bRF"/>
+                            <constraint firstItem="Bpf-DW-Rbh" firstAttribute="top" secondItem="6Rr-9J-I34" secondAttribute="bottom" id="Cgx-a3-Feo"/>
+                            <constraint firstAttribute="trailing" secondItem="HWS-ma-64g" secondAttribute="trailing" id="EGw-jv-fqZ"/>
+                            <constraint firstItem="GUr-kn-pBE" firstAttribute="leading" secondItem="Ejg-Sl-Ukk" secondAttribute="leading" id="GI4-St-Pd0"/>
+                            <constraint firstAttribute="trailing" secondItem="GUr-kn-pBE" secondAttribute="trailing" id="JQ6-I7-O5o"/>
+                            <constraint firstItem="L2C-Va-Zfs" firstAttribute="leading" secondItem="Ejg-Sl-Ukk" secondAttribute="leading" id="Jvt-8V-eUs"/>
+                            <constraint firstItem="Bpf-DW-Rbh" firstAttribute="leading" secondItem="Ejg-Sl-Ukk" secondAttribute="leading" constant="16" id="RAD-kj-ZFk"/>
+                            <constraint firstAttribute="trailing" secondItem="L2C-Va-Zfs" secondAttribute="trailing" id="XoO-JS-Jp9"/>
+                            <constraint firstItem="L2C-Va-Zfs" firstAttribute="top" secondItem="Ejg-Sl-Ukk" secondAttribute="top" id="Ycp-vC-sqo"/>
+                            <constraint firstItem="HWS-ma-64g" firstAttribute="leading" secondItem="Ejg-Sl-Ukk" secondAttribute="leading" id="e5i-A9-3Q2"/>
+                            <constraint firstAttribute="trailing" secondItem="Bpf-DW-Rbh" secondAttribute="trailing" constant="16" id="hT9-Ce-fjW"/>
+                            <constraint firstItem="GUr-kn-pBE" firstAttribute="top" secondItem="HWS-ma-64g" secondAttribute="bottom" id="zF1-Kg-09q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnCall" destination="dsk-Oz-G81" id="vmd-Av-oyw"/>
+                        <outlet property="btnCallHistory" destination="uI9-qq-oWy" id="MxJ-h3-A8E"/>
+                        <outlet property="containerView" destination="GUr-kn-pBE" id="1E2-Jh-gNg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWD-I8-MmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-708" y="1094"/>
+            <point key="canvasLocation" x="-708" y="1093.4032983508246"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

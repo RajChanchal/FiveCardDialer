@@ -15,7 +15,10 @@ class HomeViewController: UIViewController,EPPickerDelegate,UITextFieldDelegate 
     @IBOutlet weak var txtPhoneNumber: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let indentView = UIView(frame: CGRect(x: 0, y:0, width: 10, height: 10))
+        txtPhoneNumber.leftView = indentView
+        txtPhoneNumber.leftViewMode = .always
+
     }
     
     override func didReceiveMemoryWarning() {
